@@ -1,0 +1,42 @@
+Create Project Folder
+C:\users\you> mkdir <projectFolder>
+C:\users\you> cd <projectFolder>
+
+Create Virtual Env
+C:\users\you\projectFolder> mkdir venv
+C:\users\you\projectFolder> cd venv
+C:\users\you\projectFolder\venv> python -m venv .
+C:\users\you\projectFolder\venv> Scripts\activate.bat
+C:\users\you\projectFolder\venv> cd..
+
+Install Python packages
+(venv) C:\users\you\projectFolder> python -m pip install --upgrade pip
+(venv) C:\users\you\projectFolder> pip install Django
+
+Create Django Project and app
+(venv) C:\users\you\projectFolder> Django-admin startproject <projectName>
+(venv) C:\users\you\projectFolder> cd <projectName>
+(venv) C:\users\you\projectFolder\projectName>
+(venv) C:\users\you\projectFolder\projectName> py manage.py startapp <appName>
+
+Setup Github repository
+https://github.com/new - Do not initialize with License or README
+(venv) C:\users\you\projectFolder\projectName> cd..
+(venv) C:\users\you\projectFolder> echo "# <repoName> >> README.md
+(venv) C:\users\you\projectFolder> echo venv >> .gitignore
+(venv) C:\users\you\projectFolder> git init
+(venv) C:\users\you\projectFolder> git add .
+(venv) C:\users\you\projectFolder> git commit -m "first commit"
+(venv) C:\users\you\projectFolder> git remote add origin https://github.com/meike23/<repoName>.git
+(venv) C:\users\you\projectFolder> git push origin master
+
+Add to .gitignore
+https://www.gitignore.io/api/django
+
+Happy Coding!
+
+
+
+
+
+
